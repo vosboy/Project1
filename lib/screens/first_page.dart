@@ -35,7 +35,7 @@ class _FirstPageState extends State<FirstPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
-                      "たしかな技術高いレベルあたたかい仲間たち",
+                    "たしかな技術高いレベルあたたかい仲間たち",
                     style: TextStyle(
                       fontSize: width *0.088,
                       fontWeight: FontWeight.w900,
