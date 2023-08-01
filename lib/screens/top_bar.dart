@@ -470,18 +470,46 @@ class _TopBarState extends State<TopBar> {
                             SizedBox(height: 15),
                             Text("募集職種",style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold),),
                             Text("ＩＴエンジニア", style: TextStyle(color: Colors.white,fontSize: 17.5,fontWeight: FontWeight.normal),),
-                            Text("•プロジェクトマネージャー(PM)",style: TextStyle(color: Colors.white,fontSize: 13,fontWeight: FontWeight.normal),),
-                            Text("•プロジェクトリーダー(PL)",style: TextStyle(color: Colors.white,fontSize: 13,fontWeight: FontWeight.normal),),
-                            Text("•システムエンジニア(SE)",style: TextStyle(color: Colors.white,fontSize: 13,fontWeight: FontWeight.normal),),
-                            Text("•ブリッジSE",style: TextStyle(color: Colors.white,fontSize: 13,fontWeight: FontWeight.normal),),
-                            Text("•プログラマー(PG)",style: TextStyle(color: Colors.white,fontSize: 13,fontWeight: FontWeight.normal),),
+                            Container(
+                              width: 320,
+                              height: 100,
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text("•プロジェクトマネージャー(PM)",style: TextStyle(color: Colors.white,fontSize: 13,fontWeight: FontWeight.normal),),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("•プロジェクトリーダー(PL)",style: TextStyle(color: Colors.white,fontSize: 13,fontWeight: FontWeight.normal),),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("•システムエンジニア(SE)",style: TextStyle(color: Colors.white,fontSize: 13,fontWeight: FontWeight.normal),),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("•ブリッジSE",style: TextStyle(color: Colors.white,fontSize: 13,fontWeight: FontWeight.normal),),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("•プログラマー(PG)",style: TextStyle(color: Colors.white,fontSize: 13,fontWeight: FontWeight.normal),),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                             ),
                           ],
                         ),
 
                       ),
                       SizedBox(height: 40),
                       Container(
-                        width: 390,
+                        width: 320,
                         height: 385.95,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -489,12 +517,66 @@ class _TopBarState extends State<TopBar> {
                             Icon(Icons.shopping_bag,size: 115,color: Colors.white),
                             SizedBox(height: 10),
                             Text("応募方法",style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold),),
-                            Text("•履歴書を下記のメールアドレスで送ってください。",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.normal,height: 1.9),),
-                            Text("採用専用email：",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.normal,height: 1.5),),
-                            Text("※履歴書フォーマットは",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.normal,height: 1.5),),
-                            Text("•書類選考のうえ、面談についてご連絡いたします。：",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.normal,height: 1.5),),
-                            Text("•応募に関する秘密は厳守いたします。：",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.normal,height: 1.5),),
-                            Text("•送りいただいた履歴書および職務経歴書は返却いたしませんのでご了解ください。：",style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.normal,height: 1.5),),
+                            SizedBox(height: 7,),
+                            Row(
+                              children: [
+                                Text("•履歴書を下記のメールアドレスで送ってくださ\n  い。",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.normal,height: 1.5),),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text("  採用専用email：",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.normal,height: 1),),
+                                Image.asset("assets/images/ppemail-r.png")
+                              ],
+                            ),
+                            SizedBox(height: 7,),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Container(
+                                  width: 126,
+                                    height: 11,
+                                    child: Text("   ※履歴書フォーマットは",
+                                      style: TextStyle(color: Colors.white,fontSize: 11,fontWeight: FontWeight.normal,height: 1.1),
+                                    )
+                                ),
+                                Container(
+                                  width: 33,
+                                  height: 16,
+                                  child: TextButton(onPressed: (){}, child: Text("こちら"),
+                                  style: TextButton.styleFrom(
+                                    textStyle: TextStyle(fontSize: 11,fontWeight: FontWeight.bold),
+                                    foregroundColor: Colors.white,
+                                    alignment: Alignment.bottomLeft,
+                                    padding: EdgeInsets.zero,
+                                  ),
+                              ),
+                                ),
+                                Container(
+                                    width: 156,
+                                    height: 11,
+                                    child: Text("でダウンロードしてください。",
+                                      style: TextStyle(color: Colors.white,fontSize: 11,fontWeight: FontWeight.normal,height: 1.2),
+                                    )
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 7,),
+                            Row(
+                              children: [
+                                Text("•書類選考のうえ、面談についてご連絡いたしま\n  す。",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.normal,height: 1.5),),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text("•応募に関する秘密は厳守いたします。",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.normal,height: 1.5),),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text("•送りいただいた履歴書および職務経歴書は返却い\n  たしませんのでご了解ください。",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.normal,height: 1.5),),
+                              ],
+                            ),
                           ],
                         ),
 
