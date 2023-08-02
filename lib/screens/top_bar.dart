@@ -588,31 +588,89 @@ class _TopBarState extends State<TopBar> {
             ),
           ),
           Container(
-            width: 500,
-            height: 500,
+            width: 390,
+            height: 1164,
             color: Colors.white,
             child: Stack(
               alignment: Alignment.center,
               children: [
-                Column(
-                  children: [
-                    Container(
-                      child: Text(
-                          "会社理念",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 30,fontWeight: FontWeight.bold
-                          )
+                Container(
+                  width: 390,
+                  height: 964,
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 390,
+                        height: 244,
+                        child: Column(
+                          children: [
+                            Container(
+                              child: Column(
+                                children: [
+                                  Text(
+                                      "お問い合わせ",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 30,fontWeight: FontWeight.normal,height: 1.2
+                                      )
+                                  ),
+                                  SizedBox(height:10,),
+                                  Container(
+                                    width: 50,
+                                    height: 25,
+                                    child: Divider(color: Colors.lightBlue,thickness: 3.0),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 360,
+                              height: 168,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text("弊社の製品・ソリューションに関するご質問や、より詳しい内容について、お気軽にお問い合わせください。お問い合わせの前に通知と同意書（Web用）を必ずご確認になり、同意頂いた上で、お問い合わせください。なお、ご回答までに少々お時間を頂く場合がございます。あらかじめご了承ください。",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.normal,height: 1.3),),
+
+                                ],
+                              ),
+
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
-                )
+                      Container(
+                        width: 390,
+                        height: 685,
+                        child: Container(
+                          width: 360,
+                          height: 685,
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    child: Text("会社名",style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  Container(),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                ),
               ],
             ),
           ),
           Container(
-            width: 500,
-            height: 80,
+            width: 390,
+            height: 88,
             color: Colors.black,
             child: Stack(
               alignment: Alignment.center,
