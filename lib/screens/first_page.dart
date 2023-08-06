@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project1/screens/Inquiry_page.dart';
+import 'package:project1/screens/top_bar.dart';
 
 class FirstPage extends StatefulWidget {
   const FirstPage({super.key});
@@ -9,41 +11,19 @@ class FirstPage extends StatefulWidget {
 
 class _FirstPageState extends State<FirstPage> {
 
-  var heigth, width;
-
   @override
   Widget build(BuildContext context) {
-    heigth = MediaQuery.of(context).size.height;
-    width = MediaQuery.of(context).size.width;
     return Scaffold(
-      body: Stack(
+      backgroundColor: Colors.white,
+      body: ListView(
         children: [
           Container(
-            height: heigth,
-            width: width,
-            color: Colors.grey.shade200,
-            child: Image.asset(
-              "assets/images/header.jpg",fit: BoxFit.cover,
-            ),
-          ),
-          Align(
-            alignment: Alignment.center,
-            child: SizedBox(
-              height: heigth *0.32,
-              width: width,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Text(
-                    "たしかな技術高いレベルあたたかい仲間たち",
-                    style: TextStyle(
-                      fontSize: width *0.088,
-                      fontWeight: FontWeight.w900,
-                      color: Colors.white,
-                    ),
-                  )
-                ],
-              ),
+            width: double.infinity,
+            height: 1000,
+            child: const Column(
+              children: [
+                InquiryPage(),
+              ],
             ),
           )
         ],
@@ -51,3 +31,4 @@ class _FirstPageState extends State<FirstPage> {
     );
   }
 }
+
