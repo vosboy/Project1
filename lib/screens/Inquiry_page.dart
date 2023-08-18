@@ -13,26 +13,22 @@ class InquiryPage extends StatelessWidget {
             width: 390,
             height: 88,
             color: Colors.black,
-            child: Stack(
+            child: const Stack(
               alignment: Alignment.center,
               children: [
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                        "Copyright © Since 2015 PeopleNetwork Co., Ltd.",
+                    Text("Copyright © Since 2015 PeopleNetwork Co., Ltd.",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 15,fontWeight: FontWeight.bold
-                        )
-                    ),
-                    Text(
-                        "All Rights Reserved.",
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold)),
+                    Text("All Rights Reserved.",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 15,fontWeight: FontWeight.bold
-                        )
-                    ),
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold)),
                   ],
                 )
               ],
